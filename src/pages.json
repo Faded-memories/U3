@@ -3,13 +3,22 @@
 		{
 			"path": "pages/home/index",
 			"style": {
-				"navigationBarTitleText": "首页"
+				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom"
 			}
 		},
 		{
-			"path": "pages/home/details",
+			"path": "pages/home/videoDetails",
 			"style": {
-				"navigationBarTitleText": "视频详情"
+				"navigationBarBackgroundColor": "#F8F8F8",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/home/contentDetails",
+			"style": {
+				"navigationBarBackgroundColor": "#F8F8F8",
+				"navigationStyle": "custom"
 			}
 		},
 		{

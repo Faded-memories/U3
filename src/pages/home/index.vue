@@ -1,7 +1,11 @@
 <template>
-	<view>
+	<view class="u3-Page">
 		home
-		<text @click="toPage('/pages/home/details')">视频详情</text>
+		<view @click="toPage('/pages/home/contentDetails')">文本详情</view>
+		<view @click="toPage('/pages/home/contentDetails')">文本详情</view>
+		<view @click="toPage('/pages/home/contentDetails')">文本详情</view>
+		<view @click="toPage('/pages/home/contentDetails')">文本详情</view>
+		<view @click="toPage('/pages/home/contentDetails')">视频详情</view>
 		<TabBer />
 	</view>
 </template>

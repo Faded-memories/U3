@@ -1,5 +1,6 @@
 <template>
-	<view>
+	<view class="u3-Page">
+		<GeneralHeader title="视频详情"/>
 		<video id="myVideo" src="https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/2minute-demo.mp4"
 			@error="videoErrorCallback" enable-danmu danmu-btn controls></video>
 		<video id="myVideo2" src="https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/2minute-demo.mp4"
@@ -15,6 +16,7 @@
 </template>
 
 <script lang="ts" setup>
+	import GeneralHeader from "@/components/globle/header/GeneralHeader.vue"
 	const con = () => {
 		console.log('点击了控件')
 	}
@@ -28,16 +30,16 @@
 	#myVideo1,
 	#myVideo2,
 	#myVideo3,
-	#myVideo4{
+	#myVideo4 {
 		width: 100vw;
 	}
 
 	.control {
 		width: 100vw;
-		height: 60px;
+		height: 120rpx;
 		background-color: pink;
 		position: fixed;
-		top: 50px;
+		top: 350rpx;
 		z-index: 999999;
 	}
 </style>
