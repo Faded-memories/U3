@@ -1,9 +1,23 @@
 {
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue",
+		"^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+		"^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+	},
+
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
 		{
-			"path": "pages/home/index",
+			"path": "pages/home/home",
 			"style": {
 				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/account/login",
+			"style": {
+				"navigationBarTitleText": "登录页面",
 				"navigationStyle": "custom"
 			}
 		},
@@ -35,10 +49,14 @@
 		"backgroundColor": "#F8F8F8"
 	},
 	"tabBar": {
-		"custom":true,
-		"list":[
-			{"pagePath": "pages/home/index"},
-			{"pagePath": "pages/account/index"}
+		"custom": true,
+		"list": [{
+				"pagePath": "pages/home/home"
+			},
+			{
+				"pagePath": "pages/account/index"
+			}
 		]
 	}
+
 }

@@ -15,7 +15,7 @@
 	import { useTabBarStore } from '@/store/tabBar'
 	const tabBar = useTabBarStore()
 	const tabBarList = ref([
-		{ label: '首页', path: '/pages/home/index', icon: '/static/tabBar/home.png', acIcvon: '/static/tabBar/homet.png', color: 'rgb(89, 181, 117)' },
+		{ label: '首页', path: '/pages/home/home', icon: '/static/tabBar/home.png', acIcvon: '/static/tabBar/homet.png', color: 'rgb(89, 181, 117)' },
 		{ label: '我的', path: '/pages/account/index', icon: '/static/tabBar/my.png', acIcvon: '/static/tabBar/myt.png', color: 'rgb(89, 181, 117)' }
 	])
 	const switchTab = (index: number) => {
@@ -25,13 +25,12 @@
 			url: tabBarList.value[index].path
 		})
 	}
-	console.log(tabBar.tabIndex)
 </script>
 
 <style lang="scss" scoped>
 	.u3Tabbar {
 		position: fixed;
-		bottom: 0;
+		bottom: var(--window-bottom);
 		width: 100vw;
 		height: 100rpx;
 		display: flex;
@@ -39,6 +38,7 @@
 		background-color: white;
 		color: #333;
 		box-shadow: 0 -5rpx 10rpx rgba(0, 0, 0, 0.1);
+		z-index: 999;
 		/* 设置上边框阴影 */
 
 		&-container {

@@ -6,7 +6,7 @@
 </template>
 
 <script lang="ts" setup>
-	import TabBer from "../../components/globle/TabBar.vue"
+	import TabBer from "@/components/globle/TabBar.vue"
 </script>
 
 <style>
