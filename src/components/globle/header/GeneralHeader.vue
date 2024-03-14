@@ -1,7 +1,7 @@
 <template>
 	<view class="generalHeader">
 		<view class="" @click="toPage">
-			<u-icon name="arrow-left" />
+			<u-icon :name="props.icon" />
 		</view>
 		<view>
 			{{props.title}}
@@ -13,14 +13,18 @@
 </template>
 
 <script setup lang="ts">
-	import { ref } from "vue";
 	let props = defineProps({
 		title: {
 			type: String,
 			default: ''
-		}
+		},
+		icon: {
+			type: String,
+			default: 'arrow-left'
+		},
 	})
 	const toPage = () => {
+		if (!props.icon) return ''
 		uni.navigateBack()
 	}
 </script>

@@ -22,23 +22,9 @@
 			}
 		},
 		{
-			"path": "pages/home/videoDetails",
+			"path": "pages/account/account",
 			"style": {
-				"navigationBarBackgroundColor": "#F8F8F8",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/home/contentDetails",
-			"style": {
-				"navigationBarBackgroundColor": "#F8F8F8",
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/account/index",
-			"style": {
-				"navigationBarTitleText": "账户"
+				"navigationBarTitleText": "我的"
 			}
 		}
 	],
@@ -54,7 +40,7 @@
 				"pagePath": "pages/home/home"
 			},
 			{
-				"pagePath": "pages/account/index"
+				"pagePath": "pages/account/account"
 			}
 		]
 	}

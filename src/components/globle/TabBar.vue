@@ -16,7 +16,7 @@
 	const tabBar = useTabBarStore()
 	const tabBarList = ref([
 		{ label: '首页', path: '/pages/home/home', icon: '/static/tabBar/home.png', acIcvon: '/static/tabBar/homet.png', color: 'rgb(89, 181, 117)' },
-		{ label: '我的', path: '/pages/account/index', icon: '/static/tabBar/my.png', acIcvon: '/static/tabBar/myt.png', color: 'rgb(89, 181, 117)' }
+		{ label: '我的', path: '/pages/account/account', icon: '/static/tabBar/my.png', acIcvon: '/static/tabBar/myt.png', color: 'rgb(89, 181, 117)' }
 	])
 	const switchTab = (index: number) => {
 		if (tabBar.tabIndex === index) return ''
